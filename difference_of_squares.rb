@@ -1,4 +1,7 @@
 class Squares
-  def self.new(num)
+  def initialize(num)
+  end
+
+  def square_of_sum
   end
 end
