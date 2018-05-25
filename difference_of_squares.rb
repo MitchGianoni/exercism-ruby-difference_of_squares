@@ -5,13 +5,19 @@ class Squares
     @num = num
   end
 
+  def difference
+    square_of_sum - sum_of_squares
+  end
+
   def square_of_sum
     sum = (0..@num).reduce(:+)
-    return sum**2
+    sum**2
   end
 
   def sum_of_squares
-    return 1
+    1.upto(@num).reduce(0) do |sum, number|
+      sum + number**2
+    end
   end
 end
 
